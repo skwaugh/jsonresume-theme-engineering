@@ -1,0 +1,18 @@
+{{#if resume.publications.length}}
+<section id="publications">
+    <h2>Publications</h2>
+    <ul class="item">
+        {{#each resume.publications}}
+        <li>
+            {{#if title}}
+            {{#if summary}}
+            <strong>{{title}}</strong>: {{description}}
+            {{else}}
+            <strong>{{title}}</strong>
+            {{/if}}
+            {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+</section>
+{{/if}}
