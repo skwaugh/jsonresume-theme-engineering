@@ -80,6 +80,8 @@ a {
 
 .position>.position-header>.position-header-summary {
     font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .position>.item-details {
