@@ -48,12 +48,46 @@ a {
     font-style: italic;
 }
 
+.item>.item-header>.item-header-summary {
+    font-style: bold;
+}
+
 .item>.item-details {
     float: right;
     text-align: right;
 }
 
 .item>.item-details>.item-details-title {
+    font-weight: bold;
+}
+
+.position {
+    margin-top: 8px;
+}
+
+.position>.position-header {
+    float: left;
+    display: block;
+}
+
+.position>.position-header>.position-header-title {
+    font-weight: normal;
+}
+
+.position>.position-header>.position-header-subtitle {
+    font-weight: bold;
+}
+
+.position>.position-header>.position-header-summary {
+    font-style: italic;
+}
+
+.position>.item-details {
+    float: right;
+    text-align: right;
+}
+
+.position>.item-details>.item-details-title {
     font-weight: bold;
 }
 

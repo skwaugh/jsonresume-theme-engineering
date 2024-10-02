@@ -2,15 +2,15 @@
 <section id="projects">
     <h2>Projects</h2>
     {{#each resume.projects}}
-        {{#> item 
+        {{#> position 
             title=(getValueIfDiffFromPrevious @root.resume.projects @index "name") 
-            subtitle=role 
+            subtitle=position 
             location=location 
             startDate=startDate 
             endDate=endDate 
             startDate2=startDate2 
-            endDate2=endDate2}}
-        
+            endDate2=endDate2
+            summary=summary}}
         {{#if highlights.length}}
         <ul class="highlights">
             {{#each highlights}}
@@ -18,7 +18,7 @@
             {{/each}}
         </ul>
         {{/if}}
-        {{/item}}
+        {{/position}}
     {{/each}}
 </section>
 {{/if}}
