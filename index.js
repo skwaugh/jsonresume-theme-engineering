@@ -33,7 +33,12 @@ handlebars.registerHelper({
   },
 
   formatDate: function (date) {
-    return moment(date).format('MMM YYYY');
+    // Handle "Present" explicitly
+    if (typeof date === 'string' && date.toLowerCase() === "present") {
+      return "Present";
+    }
+    // Specify the input format to match "MMMM YYYY" (e.g., "January 2023")
+    return moment(date, "MMMM YYYY").format('MMM YYYY');
   },
 
   getValueIfDiffFromPrevious: function (array, index, key) {
@@ -64,3 +69,4 @@ module.exports = {
     mediaType: 'print',
   },
 };
+
